@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import scrollIntoView from "scroll-into-view-if-needed";
+import scrollIntoView from "smooth-scroll-into-view-if-needed";
 
 export default function App() {
   const [messages, setMessages] = useState([
@@ -37,7 +37,6 @@ export default function App() {
 
       scrollIntoView(element, {
         scrollMode: "if-needed",
-        behavior: "smooth",
       });
     }
   }, [messages]);
